@@ -148,12 +148,12 @@ type ConnectionsDoc struct {
 
 // TCMallocDoc contains docs from db.serverStatus().tcmalloc
 type TCMallocDoc struct {
-	Generic  GenericTCMAllocDoc  `json:"generic" bson:"generic"`
+	Generic  GenericTCMallocDoc  `json:"generic" bson:"generic"`
 	TCMalloc DetailedTCMallocDoc `json:"tcmalloc" bson:"tcmalloc"`
 }
 
-// GenericTCMAllocDoc contains docs from db.serverStatus().tcmalloc.generic
-type GenericTCMAllocDoc struct {
+// GenericTCMallocDoc contains docs from db.serverStatus().tcmalloc.generic
+type GenericTCMallocDoc struct {
 	CurrentAllocatedBytes uint64 `json:"current_allocated_bytes" bson:"current_allocated_bytes"`
 	HeapSize              uint64 `json:"heap_size" bson:"heap_size"`
 }
